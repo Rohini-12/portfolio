@@ -2,13 +2,14 @@ import { Box, Button, Typography } from "@mui/material";
 import TypingEffect from "./TypingEffect";
 
 const Hero = () => {
+  const resumePath = `${import.meta.env.BASE_URL}assets/resume/Rohini_Patil_Resume.pdf`;
+
   const handleDownload = () => {
-    // Open resume in new tab
-    window.open("/assets/resume/Rohini_Patil_Resume.pdf", "_blank");
+    window.open(resumePath, "_blank");
 
     // Trigger download
     const link = document.createElement("a");
-    link.href = "/assets/resume/Rohini_Patil_Resume.pdf";
+    link.href = resumePath;
     link.download = "Rohini_Patil_Resume.pdf";
     document.body.appendChild(link);
     link.click();
@@ -37,7 +38,7 @@ const Hero = () => {
 
       <TypingEffect />
 
-      <Box sx={{ display: "flex", gap: 2, mt: 2 }} id="hero">
+      <Box sx={{ display: "flex", gap: 2, mt: 2 }}>
         <Button
           variant="contained"
           sx={{
