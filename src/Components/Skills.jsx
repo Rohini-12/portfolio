@@ -30,7 +30,6 @@ const Skills = () => {
         background: "linear-gradient(135deg, #0f2027, #203a43, #2c5364)",
         color: "white",
         p: 14,
-        textAlign: "center",
       }}
     >
       <Typography variant="h3" mb={4} fontWeight="bold">
@@ -63,7 +62,10 @@ const Skills = () => {
           }}
         >
           {skill.icon}
-          <Typography mt={2}>{skill.name}</Typography>
+         <Typography sx={{ fontSize: "1.4rem" }} mt={2}>
+          {skill.name}
+        </Typography>
+
         </Paper>
       </motion.div>
     </Grid>

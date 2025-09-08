@@ -5,7 +5,7 @@ const Contact = () => {
     <Box
       id="contact"
       sx={{
-        minHeight: "50vh",
+        minHeight: "60vh",
         background: "linear-gradient(135deg, #0f2027, #203a43, #2c5364)",
         color: "white",
         display: "flex",
@@ -13,8 +13,6 @@ const Contact = () => {
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
-        gap: 3,
-        p: 3,
       }}
     >
       <Box sx={{ mb: 2 }}>
@@ -24,7 +22,7 @@ const Contact = () => {
       </Box>
 
       {/* Footer / Email */}
-      <Typography variant="body2" sx={{ color: "#d8e7e4ff" }}>
+      <Typography variant="body2" sx={{ fontSize: "1.4rem", color: "#d8e7e4ff" }}>
         Email :- rohinirpatil12@gmail.com
       </Typography>
     </Box>

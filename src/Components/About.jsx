@@ -23,7 +23,7 @@ const About = () => {
       <Typography variant="h4" fontWeight="bold">
         About Me
       </Typography>
-      <Typography variant="body1" sx={{ maxWidth: "700px", lineHeight: 1.7 }}>
+      <Typography variant="body1" sx={{ fontSize: "1.4rem", maxWidth: "700px", lineHeight: 1.7 }}>
         Frontend Engineer with 4.4 years of experience specializing in React.js and Vue.js.
         Proven expertise in building scalable and dynamic web applications with strong skills in 
         state management (Redux, Vuex), REST API integration, responsive UI development, and 
